@@ -1,0 +1,182 @@
+body,html {
+  background-color: #050510;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+.playerSelect {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.selectionBox {
+  width: 750px;
+  position: absolute;
+  left: 100px;
+  top: 320px;
+}
+
+.backgroundBox{
+  background-image: url(https://s20.postimg.org/iub5so5tp/black-and-white-board-play-texture-line-blackboard-1202308-pxher.jpg);
+  background-size: cover;
+  z-index: 5;
+}
+
+.container, .playerSelect, .backgroundBox {
+  height: 550px;
+  width: 900px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.options{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.gameboard {
+  height: 520px;
+  width: 550px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  border-radius: 20px;
+  z-index: -10;
+}
+
+.row {
+height: 173px;
+width: 550px;
+position: absolute;
+left: 0;
+}
+
+.box {
+  width: 183px;
+  height: 173px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#invitation {
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  left: 30px;
+  top: 80px;
+}
+
+#pickO {
+   width: 50%;
+   position: absolute;
+   left: 0;
+   cursor: pointer;
+}
+
+#pickX {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+#row0 {
+top: 0;
+}
+
+#row1 {
+top: 173px;
+}
+
+#row2 {
+top: 346px;
+}
+
+#box0 {
+  left: 0;
+  width: 173px;
+}
+
+#box1 {
+  left: 173px;
+}
+
+#box2 {
+  left: 366px;
+}
+
+#box3 {
+  left: 0;
+  width: 173px;
+}
+
+#box4 {
+  left: 173px;
+}
+
+#box5 {
+  left: 366px;
+}
+
+#box6 {
+  left: 0;
+  width: 173px;
+}
+
+#box7 {
+  left: 173px;
+}
+
+#box8 {
+  left: 366px;
+}
+
+#text0 {
+  opacity: 0;
+}
+
+#text1 {
+  opacity: 0;
+}
+
+#text2 {
+  opacity: 0;
+}
+
+#text3 {
+  opacity: 0;
+}
+
+#text4 {
+  opacity: 0;
+}
+
+#text5 {
+  opacity: 0;
+}
+
+#text6 {
+  opacity: 0;
+}
+
+#text7 {
+  opacity: 0;
+}
+
+#text8 {
+  opacity: 0;
+}

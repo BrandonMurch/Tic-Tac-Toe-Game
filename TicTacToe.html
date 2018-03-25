@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    @description - A game of Tic Tac Toe with a computer.
+    @input - based solely on clicking the GUI to pick your square.
+    @author - Brandon - Brandon.Murch@protonmail.com
+   -->
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+    <meta content='utf-8' http-equiv='encoding'>
+    <title>TicTacToe</title>
+    <link href='TicTacToe.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="backgroundBox"></div>
+    <div class="playerSelect">
+      <h1 id="invitation">Would you like</h1>
+      <h1 id="invitation">to play as...</h1>
+      <div class="selectionBox">
+        <h1 id="pickX">X</h1>
+        <h1 id="pickO">O</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="gameboard">
+        <div class="row" id="row0">
+          <div class="box" id="box0">
+            <h1 id="text0"></h1>
+          </div>
+          <div class="box" id="box1">
+            <h1 id="text1"></h1>
+          </div>
+          <div class="box" id="box2">
+            <h1 id="text2"></h1>
+          </div>
+        </div>
+        <div class="row" id="row1">
+          <div class="box" id="box3">
+            <h1 id="text3"></h1>
+          </div>
+          <div class="box" id="box4">
+            <h1 id="text4"></h1>
+          </div>
+          <div class="box" id="box5">
+            <h1 id="text5"></h1>
+          </div>
+        </div>
+        <div class="row" id="row2">
+          <div class="box" id="box6">
+            <h1 id="text6"></h1>
+          </div>
+          <div class="box" id="box7">
+            <h1 id="text7"></h1>
+          </div>
+          <div class="box" id="box8">
+            <h1 id="text8"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="TicTacToe.js"></script>
+  </body>
+</html>
