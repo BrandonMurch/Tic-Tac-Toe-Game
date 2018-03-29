@@ -27,8 +27,9 @@ let arraySq = [], // array to hold the markings for each square
 
 const clickSquare = (num, icon) =>{
    arraySq[num] = icon;
-   document.getElementById("text" + num).innerHTML = icon;
-   $("#text" + num).css('opacity', 1);
+   document.getElementsByClassName("gameboard__icon--" + num)[0]
+      .innerHTML = icon;
+   $(".gameboard__icon--" + num).css('opacity', 1);
    player.turnCounter++;
  };
 
@@ -38,7 +39,7 @@ const startGame = () => {
   player.turnCounter = 0;
   player.turn = player.turnDefault;
   for (i=0;i<9;i++){
-    $("#text" + i).css('opacity', 0);
+    $(".gameboard__icon--" + i).css('opacity', 0);
   }
   player.gameOver = false;
               // If the computer is X, then it goes first.
@@ -166,47 +167,47 @@ const playerMove = (num) => {
 };
                 // all the boxes you can click, and the selection screen.
 $(document).ready(function() {
-  $(document).on("click","#pickO",function(){
+  $(document).on("click",".playerSelect__icon--o",function(){
     player.icon = "O";
     player.computer = "X";
     player.turnDefault = false;
-    $(".playerSelect").css('z-index', '-10');
-    $(".container").css('z-index', '6');
+    $(".container__playerSelect").css('z-index', '-50');
+    $(".gameboard").css('z-index', '50');
     startGame();
   });
-  $(document).on("click","#pickX",function(){
+  $(document).on("click",".playerSelect__icon--x",function(){
     player.icon = "X";
     player.computer = "O";
     player.turnDefault = true;
-    $(".playerSelect").css('z-index', '-10');
-    $(".container").css('z-index', '6');
+    $(".container__playerSelect").css('z-index', '-50');
+    $(".gameboard").css('z-index', '50');
     startGame();
   });
-  $(document).on("click","#box0",function(){
+  $(document).on("click",".gameboard__box--0",function(){
     playerMove(0);
   });
-  $(document).on("click","#box1",function(){
+  $(document).on("click",".gameboard__box--1",function(){
     playerMove(1);
   });
-  $(document).on("click","#box2",function(){
+  $(document).on("click",".gameboard__box--2",function(){
     playerMove(2);
   });
-  $(document).on("click","#box3",function(){
+  $(document).on("click",".gameboard__box--3",function(){
     playerMove(3);
   });
-  $(document).on("click","#box4",function(){
+  $(document).on("click",".gameboard__box--4",function(){
     playerMove(4);
   });
-  $(document).on("click","#box5",function(){
+  $(document).on("click",".gameboard__box--5",function(){
     playerMove(5);
   });
-  $(document).on("click","#box6",function(){
+  $(document).on("click",".gameboard__box--6",function(){
     playerMove(6);
   });
-  $(document).on("click","#box7",function(){
+  $(document).on("click",".gameboard__box--7",function(){
     playerMove(7);
   });
-  $(document).on("click","#box8",function(){
+  $(document).on("click",".gameboard__box--8",function(){
     playerMove(8);
   });
 });

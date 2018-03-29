@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html class="html--zindex">
   <head>
     <!--
-    @description - A game of Tic Tac Toe with a computer.
-    @input - based solely on clicking the GUI to pick your square.
     @author - Brandon - Brandon.Murch@protonmail.com
-   -->
+    -->
+    <meta name="author" content="Brandon Murch">
+    <meta name="description" content="A game of Tic Tac Toe with a computer.">
     <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
     <meta content='utf-8' http-equiv='encoding'>
     <title>TicTacToe</title>
     <link href='TicTacToe.css' rel='stylesheet'>
-  </head>
-  <body>
-    <div class="backgroundBox"></div>
-    <div class="playerSelect">
-      <h1 id="invitation">Would you like</h1>
-      <h1 id="invitation">to play as...</h1>
-      <div class="selectionBox">
-        <h1 id="pickX">X</h1>
-        <h1 id="pickO">O</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="gameboard">
-        <div class="row" id="row0">
-          <div class="box" id="box0">
-            <h1 id="text0"></h1>
-          </div>
-          <div class="box" id="box1">
-            <h1 id="text1"></h1>
-          </div>
-          <div class="box" id="box2">
-            <h1 id="text2"></h1>
-          </div>
-        </div>
-        <div class="row" id="row1">
-          <div class="box" id="box3">
-            <h1 id="text3"></h1>
-          </div>
-          <div class="box" id="box4">
-            <h1 id="text4"></h1>
-          </div>
-          <div class="box" id="box5">
-            <h1 id="text5"></h1>
-          </div>
-        </div>
-        <div class="row" id="row2">
-          <div class="box" id="box6">
-            <h1 id="text6"></h1>
-          </div>
-          <div class="box" id="box7">
-            <h1 id="text7"></h1>
-          </div>
-          <div class="box" id="box8">
-            <h1 id="text8"></h1>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="TicTacToe.js"></script>
+  </head>
+  <body class="background--outer">
+    <div class="container">
+      <div class="container container__background"></div>
+      <div class="container container__playerSelect">
+        <h1 class= "text text--playerSelect">
+          Would you like </br> to play as...</h1>
+        <div class="playerSelect__icon">
+          <h1 class="text playerSelect__icon--x">X</h1>
+          <h1 class="text playerSelect__icon--o">O</h1>
+        </div>
+      </div>
+      <div class="gameboard">
+        <div class="gameboard__row gameboard__row--0">
+          <div class="gameboard__box gameboard__box--0">
+            <h1 class="text gameboard__icon--0"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--1">
+            <h1 class="text gameboard__icon--1"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--2">
+            <h1 class="text gameboard__icon--2"></h1>
+          </div>
+        </div>
+        <div class="gameboard__row gameboard__row--1">
+          <div class="gameboard__box gameboard__box--3">
+            <h1 class="text gameboard__icon--3"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--4">
+            <h1 class="text gameboard__icon--4"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--5">
+            <h1 class="text gameboard__icon--5"></h1>
+          </div>
+        </div>
+        <div class="gameboard__row gameboard__row--2">
+          <div class="gameboard__box gameboard__box--6">
+            <h1 class="text gameboard__icon--6"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--7">
+            <h1 class="text gameboard__icon--7"></h1>
+          </div>
+          <div class="gameboard__box gameboard__box--8">
+            <h1 class="text gameboard__icon--8"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

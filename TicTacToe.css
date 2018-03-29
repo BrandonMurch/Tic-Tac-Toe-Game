@@ -1,36 +1,14 @@
-body,html {
-  background-color: #050510;
-}
+/*
 
-h1 {
-  color: white;
-  font-size: 80px;
-  text-align: center;
-}
+This document is written in BEM.
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier || .block--modifier
 
-.playerSelect {
-  z-index: 20;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0,0,0,0.5);
-  overflow: hidden;
-}
+*/
 
-.selectionBox {
-  width: 750px;
-  position: absolute;
-  left: 100px;
-  top: 320px;
-}
-
-.backgroundBox{
-  background-image: url(https://s20.postimg.org/iub5so5tp/black-and-white-board-play-texture-line-blackboard-1202308-pxher.jpg);
-  background-size: cover;
-  z-index: 5;
-}
-
-.container, .playerSelect, .backgroundBox {
+/* Block ******************************************************************/
+.container{
   height: 550px;
   width: 900px;
   overflow: hidden;
@@ -40,12 +18,6 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.options{
-  position: absolute;
-  left: 20px;
-  top: 20px;
 }
 
 .gameboard {
@@ -58,21 +30,59 @@ h1 {
   z-index: -10;
 }
 
-.row {
+.text {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+/* Element ****************************************************************/
+.container__background{
+  background-image: url(https://s20.postimg.org/iub5so5tp/black-and-white-board-play-texture-line-blackboard-1202308-pxher.jpg);
+  background-size: cover;
+  z-index: 10;
+}
+
+.container__playerSelect {
+  z-index: 20;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.playerSelect__icon {
+  position: absolute;
+  top: 60%;
+  width: 90%;
+  left: 5%;
+}
+
+.gameboard__row {
 height: 173px;
 width: 550px;
 position: absolute;
 left: 0;
 }
 
-.box {
+.gameboard__box {
   width: 183px;
   height: 173px;
   position: absolute;
   cursor: pointer;
 }
 
-#invitation {
+/* Modifier ***************************************************************/
+.html--zindex{
+  z-index: -100
+}
+
+.background--outer {
+  background-color: #050510;
+}
+
+.text--playerSelect {
   margin: 10px;
   padding: 0;
   position: relative;
@@ -80,103 +90,67 @@ left: 0;
   top: 80px;
 }
 
-#pickO {
+.playerSelect__icon--o {
    width: 50%;
    position: absolute;
    left: 0;
    cursor: pointer;
 }
 
-#pickX {
+.playerSelect__icon--x {
   width: 50%;
   position: absolute;
   right: 0;
   cursor: pointer;
 }
 
-#row0 {
+.gameboard__row--0 {
 top: 0;
 }
 
-#row1 {
+.gameboard__row--1 {
 top: 173px;
 }
 
-#row2 {
+.gameboard__row--2 {
 top: 346px;
 }
 
-#box0 {
+.gameboard__box--0 {
   left: 0;
   width: 173px;
 }
 
-#box1 {
+.gameboard__box--1 {
   left: 173px;
 }
 
-#box2 {
+.gameboard__box--2 {
   left: 366px;
 }
 
-#box3 {
+.gameboard__box--3 {
   left: 0;
   width: 173px;
 }
 
-#box4 {
+.gameboard__box--4 {
   left: 173px;
 }
 
-#box5 {
+.gameboard__box--5 {
   left: 366px;
 }
 
-#box6 {
+.gameboard__box--6 {
   left: 0;
   width: 173px;
 }
 
-#box7 {
+.gameboard__box--7 {
   left: 173px;
 }
 
-#box8 {
+.gameboard__box--8 {
   left: 366px;
-}
-
-#text0 {
-  opacity: 0;
-}
-
-#text1 {
-  opacity: 0;
-}
-
-#text2 {
-  opacity: 0;
-}
-
-#text3 {
-  opacity: 0;
-}
-
-#text4 {
-  opacity: 0;
-}
-
-#text5 {
-  opacity: 0;
-}
-
-#text6 {
-  opacity: 0;
-}
-
-#text7 {
-  opacity: 0;
-}
-
-#text8 {
-  opacity: 0;
 }
